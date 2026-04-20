@@ -4,6 +4,8 @@ This challenge asks us to solve a cryptographic problem. Once we start the machi
 
 After we connect, we can access our first flag but it's encoded in XOR format. We are returning to the file we downloaded in the beginning of the challenge.
 
+![ImageAlt](https://github.com/ZeynepBasaran09/ctf-writeups/blob/55e9996f6462009420bf33c80002bbd9f6537518/Ekran%20g%C3%B6r%C3%BCnt%C3%BCs%C3%BC%202026-04-20%20181609.png)
+
 In the source code, we have 2 great hint for the decryption. First one is that we can see the plain text is encoded with the key. And the second one is, it says that key is randomly generated but length of the key is fixed which is 5. After finding this, we can create the descryption script:
 
 
