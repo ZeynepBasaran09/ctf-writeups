@@ -7,7 +7,7 @@ After we connect, we can access our first flag but it's encoded in XOR format. W
 In the source code, we have 2 great hint for the decryption. First one is that we can see the plain text is encoded with the key. And the second one is, it says that key is randomly generated but length of the key is fixed which is 5. After finding this, we can create the descryption script:
 
 
-def find_xor_key_and_decode(encoded_text, known_start, known_end, key_length=5):
+    def find_xor_key_and_decode(encoded_text, known_start, known_end, key_length=5):
 
     encoded_bytes = bytes.fromhex(encoded_text)
     
